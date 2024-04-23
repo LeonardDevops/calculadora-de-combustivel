@@ -1,5 +1,5 @@
 import { useState, FormEvent } from 'react'
-import logo from "./assets/adac-fuel.gif"
+import logo from "./assets/giphy (1).gif"
 
 interface CombustivelProps {
   title: string
