@@ -11,8 +11,8 @@ import './App.css'
 
 function App() {
 
-  const [alcool, setAlcool] = useState<number | any>()
-  const [gasolina, setGasolina] = useState<number | any>()
+  const [alcool, setAlcool] = useState(NaN);
+  const [gasolina, setGasolina] = useState(NaN);
   const [Combustivel, setCombustivel] = useState<CombustivelProps>()
 
 
