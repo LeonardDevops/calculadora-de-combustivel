@@ -11,8 +11,8 @@ import './App.css'
 
 function App() {
 
-  const [alcool, setAlcool] = useState(0)
-  const [gasolina, setGasolina] = useState(0)
+  const [alcool, setAlcool] = useState<number | any>()
+  const [gasolina, setGasolina] = useState<number | any>()
   const [Combustivel, setCombustivel] = useState<CombustivelProps>()
 
 
@@ -32,8 +32,8 @@ function App() {
     } else {
       setCombustivel({
         title: "Compensa usar Gasolina",
-        valorGasolina: gasolina,
-        valorAlcool: alcool
+        valorGasolina: formatarMoeda(gasolina),
+        valorAlcool: formatarMoeda(alcool)
       })
     }
 
